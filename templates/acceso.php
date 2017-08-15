@@ -1,4 +1,4 @@
-|<?php 
+<?php 
 $assets = new Assets();
 $html   = new Html();
 $assets ->principal('Acceso');

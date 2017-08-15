@@ -49,7 +49,7 @@ $assets ->sweetalert();
 
      <div class="form-group">
      <label>Mensaje</label>
-     <textarea name="mensaje" id=""  rows="5" class="form-control" required="" maxlength="140" onchange="Mayusculas(this)"></textarea>
+     <textarea name="mensaje" id=""  rows="5" class="form-control" required="" maxlength="140"></textarea>
      </div>
 
 	   
