@@ -24,7 +24,7 @@ $assets ->sweetalert();
 <div class="col-md-6">
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">Enivar Notificación</h3>
+		<h3 class="panel-title">Enviar Notificación</h3>
 	</div>
 	<div class="panel-body">
 
