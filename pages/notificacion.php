@@ -1,5 +1,4 @@
 <?php 
-
 include('../autoload.php');
 include('../session.php');
 
@@ -8,9 +7,14 @@ $html   = new Html();
 $assets ->principal('Notificación SMS');
 $assets ->sweetalert();
 ?>
-
+<script>
+function actualiza_contenido()
+{
+$('#capa').load('consulta-saldo.php');
+}
+setInterval('actualiza_contenido()', 1000 );
+</script>
 <?php $html->header(); ?>
-
 
 <div class="row">
 <div class="col-md-12">
@@ -18,19 +22,21 @@ $assets ->sweetalert();
 </div>
 </div>
 
-
 <div class="row">
 <div class="col-md-3"></div>
 <div class="col-md-6">
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<h3 class="panel-title">Enviar Notificación</h3>
-	</div>
-	<div class="panel-body">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+  Enviar Notificación
+  <div class="pull-right">
+  <div id="capa"></div>
+  </div>
+  </div>
+  <div class="panel-body">
 
-	<div id="mensaje"></div>
+  <div id="mensaje"></div>
 
-	<form  id="enviar"  method="post" autocomplete="off">
+  <form  id="enviar"  method="post" autocomplete="off">
      
      <div class="form-group">
      <label>Cliente</label>
@@ -40,7 +46,7 @@ $assets ->sweetalert();
       $clientes  = new Clientes();
       foreach ($clientes->lista() as $key => $value) 
       {
-      	echo "<option value='".$value['id']."'>".$value['nombres'].' '.$value['apellidos']."</option>";
+        echo "<option value='".$value['id']."'>".$value['nombres'].' '.$value['apellidos']."</option>";
       }
 
       ?>
@@ -52,14 +58,14 @@ $assets ->sweetalert();
      <textarea name="mensaje" id=""  rows="5" class="form-control" required="" maxlength="140"></textarea>
      </div>
 
-	   
+     
      <button class="btn btn-primary">Enviar</button>
 
 
-	</form>
+  </form>
 
 
-	</div>
+  </div>
 </div>
 </div>
 
