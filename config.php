@@ -8,7 +8,7 @@ define("PATH", "http://www.perutec.com.pe/sms/");
 define("RUTA", dirname(__FILE__).DIRECTORY_SEPARATOR);
 define("SERVERBD","localhost");
 define("USERBD", "root");
-define("PASSBD", "");
+define("PASSBD", "userperutecdb");
 define("BD", "smsperutec");
 //definir su apikey y su apicard aqui
 define('API_KEY','8B3615CA7C53');
