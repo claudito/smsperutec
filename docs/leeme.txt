@@ -1,0 +1,46 @@
+Pasos para usar la libreria API:
+
+
+
+ARCHIVOS:
+
+lib_api_sms.php : Libreria.
+run_app.php : Ejemplo de uso
+
+PASOS
+1. Editar la libreria lib_api_sms.php y/o configurar/verificar su apikey y su apicard.
+
+2. Observar run_app.php archivo de ejemplo.
+
+
+
+
+FUNCIONES:
+
+
+
+-balanceSMS() : Funcion para consultar saldo. Devuelve un array que contiene codigo de error y saldo.
+
+
+-
+sendSMS($phone,$text,$tipo) : Funcion para enviar sms. Devuelve un array que contine el codigo de error.
+
+Codigos de Error:
+
+0: Indica que la funcion se ejecuto con exito
+2: Texto enviado supera la cantidad de caracteres permitidos
+3: key no valida
+4: Datos de mensaje o telefono vacios o nulos.
+5: No hay saldo disponible
+
+.
+
+-getAnswers() : Funcion que descarga los mensajes de la bandeja de entrada.  
+
+
+
+
+Consultas:
+
+
+jwong@gamanet.pe
