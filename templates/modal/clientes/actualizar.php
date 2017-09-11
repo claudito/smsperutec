@@ -23,7 +23,7 @@ $id        =  $_GET['id'];
   </div>
   <div class="form-group">
     <label for="address">Celular</label>
-    <input type="text" class="form-control" name="numero" required maxlength="9" value="<?php echo $clientes->consulta($id,'numero'); ?>">
+    <input type="text" class="form-control" name="numero" required maxlength="9" value="<?php echo $clientes->consulta($id,'numero'); ?>" pattern="[0-9]{9}">
   </div>
 
 

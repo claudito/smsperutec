@@ -61,8 +61,8 @@ echo '<!-- Datatables -->
 function sweetalert()
 {
 echo '  
-<script src="http://t4t5.github.io/sweetalert/dist/sweetalert-dev.js"></script>
-<link rel="stylesheet" href="http://t4t5.github.io/sweetalert/dist/sweetalert.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
 ';
 }
 

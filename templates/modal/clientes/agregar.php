@@ -18,7 +18,8 @@
   </div>
   <div class="form-group">
     <label for="address">Celular</label>
-    <input type="text" class="form-control" name="numero" required maxlength="9">
+    <input type="text" class="form-control" name="numero" required maxlength="9" 
+    pattern="[0-9]{9}" > 
   </div>
 
 

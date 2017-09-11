@@ -2,8 +2,11 @@
 
 include('../autoload.php');
 
-$name =  addslashes(trim($_POST['name']));
-$pwd  =  addslashes(trim($_POST['pwd']));
+
+$funciones  =  new Funciones();
+
+$name =  $funciones->validar_xss($_POST['name']);
+$pwd  =  $funciones->validar_xss($_POST['pwd']);
 
 if (empty($name))
  {

@@ -28,7 +28,7 @@ $assets ->sweetalert();
 
   <div class="form-group">
   <label for="name">Usuario </label>
-  <input type="number" min="0"   placeholder="Usuario" class="form-control" name="name" id="name"  autofocus="" />
+  <input type="text"   placeholder="Usuario" class="form-control" name="name" id="name"  autofocus="" />
   </div>
 
   <div class="form-group">

@@ -21,22 +21,24 @@
             <li><a href="<?php echo PATH; ?>pages/notificacion">CREAR NOTIFICACIÓN</a></li>
             <li><a href="<?php echo PATH; ?>pages/mensajes-enviados">MENSAJES ENVIADOS</a></li>
             <li><a href="<?php echo PATH; ?>pages/clientes">CREAR CLIENTES</a></li>
-            <li><a href="<?php echo PATH; ?>pages/clientes-excel">IMPORTAR CLIENTES DESDE EXCEL</a></li>
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Cliente">
-        </div>
-        <button type="submit" class="btn btn-primary">Consultar</button>
-      </form>
+       <!-- 
+       <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Cliente">
+          </div>
+          <button type="submit" class="btn btn-primary">Consultar</button>
+        </form>
+       -->
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><?php echo $_SESSION[KEY.NOMBRES]; ?>  <i class="glyphicon glyphicon-user text-success"></i>  </a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="<?php echo PATH ?>procesos/logout">Salir</a></li>
+            <li><a style="cursor:pointer;" onclick="logout();">Salir</a></li>
+            
           </ul>
         </li>
       </ul>

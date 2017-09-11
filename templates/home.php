@@ -24,6 +24,4 @@ $html->header();
 </div>
 </div>
 
-
-
 <?php $html -> footer(); ?>

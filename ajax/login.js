@@ -46,9 +46,10 @@ $(document).ready(function(){
 			 {
 			$("#add_err").css('display', 'inline', 'important');
 			$("#add_err").html("<script>swal({type:'error',title:'Usuario o Contraseña Incorrectos',timer:2000,showConfirmButton: false})</script>");
-			$('#name').val("");
+			//$('#name').val("");
 			$('#name').focus();
 			$('#word').val("");
+			$('#word').focus();
 
 			}
 		   },

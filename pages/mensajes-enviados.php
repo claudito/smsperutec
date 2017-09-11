@@ -42,7 +42,7 @@ foreach ($notificacion->lista() as $key => $value): ?>
 <tr>
 <td><?php echo $value['nombres'].' '.$value['apellidos']; ?></td>
 <td><?php echo $value['detalle']; ?></td>
-<td><?php echo date_format(date_create($value['fecha_creacion']),'d-m-Y H:i:s'); ?></td>
+<td><?php echo date_format(date_create($value['fecha_creacion']),'d/m/Y H:i:s'); ?></td>
 </tr>
 <?php endforeach ?>
 </tbody>

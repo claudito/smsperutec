@@ -19,7 +19,7 @@ function agregar()
 {
 
 $db     =  new Conexion();
-$query  = "INSERT INTO cita(id_clientes,detalle)VALUES('".$this->cliente."','".$this->detalle."')";
+$query  = "INSERT INTO cita(id_clientes,detalle,fecha_creacion)VALUES('".$this->cliente."','".$this->detalle."','".date('Y-m-d H:i:s')."')";
 $result = $db->query($query);
 if ($result) 
 {
@@ -36,7 +36,7 @@ else
 
 function lista()
 {
-
+$dato   = array();
 $db     =  new Conexion();
 $query  = "SELECT c.id,cl.nombres,cl.apellidos,c.detalle,c.fecha_creacion FROM cita as c INNER JOIN clientes as cl ON c.id_clientes=cl.id";
 $result = $db->query($query);
