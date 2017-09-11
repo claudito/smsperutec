@@ -1,4 +1,4 @@
-var path  = "http://localhost/sms/";
+var path  = "http://sms.perutec.com.pe/";
 
 
 function logout(){
